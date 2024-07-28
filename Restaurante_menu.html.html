@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollo al Carbón</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header-div {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        #header-img {
+            width: 100%;
+            height: 700px;
+        }
+
+        .menu-form {
+            list-style: none;
+            padding: 10px;
+            background-color: rgb(44, 44, 44);
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .menu-form svg {
+            vertical-align: middle;
+        }
+
+        .menu-form span {
+            color: white;
+            font-weight: 600;
+            margin-left: 50px;
+            font-size: 30px;
+        }
+
+        .menu-form li {
+            display: inline-block;
+            text-align: center;
+        }
+
+        #form-menu {
+            margin-left: 1180px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            display: block;
+            font-weight: 600;
+        }
+
+
+        #form-formulario {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            display: block;
+            font-weight: 600;
+        }
+
+        #form-menu:hover {
+            color: rgb(252, 156, 47);
+        }
+
+        #form-formulario:hover {
+            color: rgb(252, 156, 47);
+        }
+
+        h2 {
+            padding-top: 25px;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(252, 156, 47);
+        }
+
+        .article-div {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 2%;
+            width: 60%;
+            background-color: rgb(245, 245, 245);
+            border-radius: 2dvh;
+            border: 2px rgb(252, 156, 47) solid;
+            box-shadow: 2px 2px 10px rgb(150, 150, 150);
+
+            #article-img {
+                width: 400px;
+                margin-right: 20%;
+                border-radius: 3dvh;
+            }
+
+            h3 {
+                color: rgb(252, 156, 47);
+                text-align: center;
+            }
+
+            p {
+                font-weight: 600;
+            }
+
+            span {
+                color: rgb(252, 156, 47);
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+            }
+        }
+
+        .article-div2 {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 2%;
+            width: 60%;
+            background-color: rgb(245, 245, 245);
+            border-radius: 2dvh;
+            border: 2px rgb(252, 156, 47) solid;
+            box-shadow: 2px 2px 10px rgb(150, 150, 150);
+
+            #article-img2 {
+                width: 400px;
+                margin-left: 20%;
+                border-radius: 3dvh;
+            }
+
+            h3 {
+                color: rgb(252, 156, 47);
+                text-align: center;
+            }
+
+            p {
+                font-weight: 600;
+            }
+
+            span {
+                color: rgb(252, 156, 47);
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+            }
+        }
+
+        .article-div3 {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding: 2%;
+            width: 60%;
+            background-color: rgb(245, 245, 245);
+            border-radius: 2dvh;
+            border: 2px rgb(252, 156, 47) solid;
+            box-shadow: 2px 2px 10px rgb(150, 150, 150);
+
+            #article-img3 {
+                width: 400px;
+                margin-right: 20%;
+                border-radius: 3dvh;
+            }
+
+            h3 {
+                color: rgb(252, 156, 47);
+                text-align: center;
+            }
+
+            p {
+                font-weight: 600;
+            }
+
+            span {
+                color: rgb(252, 156, 47);
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+            }
+        }
+
+        .form-pedido {
+            background-color: rgb(245, 245, 245);
+            margin: auto;
+            padding: 2%;
+            width: 65%;
+            border: 2px rgb(252, 156, 47) solid;
+        }
+
+        .form-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+
+        .form-pedido textarea {
+            padding-top: 5px;
+            padding-left: 5px;
+            border-radius: 10px;
+            resize: none;
+        }
+
+        .input-submit {
+            box-sizing: border-box;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .input-submit input {
+            background-color: rgb(255, 255, 255);
+            color: rgb(253, 200, 140);
+            font-weight: 600;
+            padding: 10px;
+            border: 2px solid rgb(252, 156, 47);
+            border-radius: 15px;
+        }
+
+        #box-shadow:hover {
+            color: rgb(252, 156, 47);
+            box-shadow: 0px 0px 8px rgb(255, 205, 113);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: rgb(44, 44, 44);
+            padding: 20px;
+        }
+
+        footer p {
+            color: white;
+            text-align: center;
+        }
+
+        span {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(252, 156, 47);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-div">
+            <img src="https://restaurantepituko.com/wp-content/uploads/2020/11/pollo.jpg" alt="pollo a la brasa" id="header-img">
+        </div>
+        <nav>
+            <ul class="menu-form">
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#BD4C31"><path d="M164.43-424.52q13.09-15.09 19.07-30.72 5.98-15.63 5.98-37.76 0-29.44-20-74.02-20-44.59-20-70.98 0-14.83 4.19-30.09 4.2-15.26 15.76-33.39h80.35q-13.26 18.7-18.02 34.24Q227-651.7 227-638q0 24.7 20 68.43 20 43.74 20 76.57 0 22.7-5.13 38.17-5.13 15.48-14.83 30.31h-82.61Zm269.05 0q13.08-15.09 19.06-30.72 5.98-15.63 5.98-37.76 0-30.57-20-74.3-20-43.74-20-70.7 0-14.83 4.2-30.09 4.19-15.26 15.76-33.39h80.35q-13.26 18.7-18.31 34.24-5.04 15.54-5.04 29.24 0 24.7 20 68.43 20 43.74 20 76.57 0 22.7-5.13 38.17-5.13 15.48-14.83 30.31h-82.04Zm-134.53 0q13.09-15.09 19.07-30.72Q324-470.87 324-493q0-30.57-20-74.3-20-43.74-20-70.7 0-14.83 4.19-30.09 4.2-15.26 15.77-33.39h80.34q-13.26 18.7-18.02 34.24-4.76 15.54-4.76 29.24 0 24.7 20 68.43 20 43.74 20 76.57 0 22.7-5.13 38.17-5.13 15.48-14.83 30.31h-82.61ZM390-67q-105.52 0-189.87-72.59-84.35-72.58-93.13-177.67-1.87-22.52 14.3-39.13Q137.48-373 160-373h409.13L612-775.13q5.56-50.09 42.74-83.98Q691.91-893 744-893q55.65 0 94.33 38.67Q877-815.65 877-760q0 14.57-3.35 44.63l-3.35 30.07-104.43-13.4 2.56-26.43Q771-751.57 771-760q0-11.91-7.54-19.46Q755.91-787 744-787q-10.91 0-18.24 6.83-7.32 6.82-8.76 17.3l-46 435q-11.56 110.52-91.24 185.7Q500.09-67 390-67Zm0-106q49.39 0 89.61-25.37 40.21-25.37 62.35-68.63H236.18q23 43.26 63.71 68.63Q340.61-173 390-173Zm0-94Z"/></svg> Pollo al Carbón</span>
+                <li><a id="form-menu" href="#Menú">Menú</a></li>
+                <li><a id="form-formulario" href="#Formulario del Pedido">Formulario del Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Menú">
+                <h2>Menú</h2>
+            <article>
+                <div class="article-div">
+                    <img src="https://www.sazonpapudo.cl/cdn/shop/files/pollosadomaspapasybebida.jpg?v=1710979914&width=800" alt="Pollo a la brasa" id="article-img">
+                    <div>
+                        <h3>Pollo a la brasa</h3>
+                            <p>
+                                1 Pollo entero + patatas fritas + bebida
+                                <br><br>
+                                <i>Precio: 15,85 €</i>
+                                <br><br><br>
+                                <span>Pedido: 1</span>
+                            </p>
+                    </div>
+                </div>
+            </article>
+
+            <br><br>
+
+            <article>
+                <div class="article-div2">
+                    <div>
+                        <h3>Alitas de pollo</h3>
+                            <p>
+                                Crujientes broster + patatas fritas
+                                <br><br>
+                                <i>Precio: 5,50 €</i>
+                                <br><br><br>
+                                <span>Pedido: 2</span>
+                            </p>
+                    </div>
+                    <img src="https://jetextramar.com/wp-content/uploads/2021/11/receta-de-alas-de-pollo-mitades-jet-extramar.jpg" alt="Alitas de pollo" id="article-img2">
+                </div>
+            </article>
+
+            <br><br>
+
+            <article>
+                <div class="article-div3">
+                    <img src="https://www.deliciosi.com/images/1200/1219/lomo-saltado-de-pollo.jpg" alt="Lomo Saltado de Pollo" id="article-img3">
+                    <div>
+                        <h3>Lomo Saltado de Pollo</h3>
+                            <p>
+                                Incluye arroz blanco + patatas fritas
+                                <br><br>
+                                <i>Precio: 10 €</i>
+                                <br><br><br>
+                                <span>Pedido: 3</span>
+                            </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="Formulario del Pedido">
+            <h2>Haz tu pedido</h2>
+            <form class="form-pedido">
+                <label class="form-text">Elige el pedido quieres adquirir:</label>
+                <br><br>
+                <input type="number" min="0" max="3" id="number" required>
+                <br><br><br>
+                <label class="form-text">¿Algún extra que te gustaría agregar?</label>
+                <br><br>
+                1L Coca-cola <input type="radio" name="option" required>
+                <br><br>
+                Ensala rusa + cremas <input type="radio" name="option" required>
+                <br><br>
+                Otros <input type="radio" name="option" required>
+                <br><br><br>
+                <label class="form-text">Si has elegido la opción "otros", por favor, indicanos que desea agregar en su lista:</label>
+                <br><br>
+                <textarea rows="7" cols="30" placeholder="Escribe aquí"></textarea>
+                <br><br>
+                <div class="input-submit">
+                    <input id="box-shadow" type="submit" value="Ir a finalizar compra">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <br><br>
+
+    <footer>
+        <p>
+            "Hecho con amor por <span>@GFabri :D</span>"
+        </p>
+    </footer>
+</body>
+</html>
